@@ -8,6 +8,7 @@
 ## Installation setting
 
 ### clone project.
+`git clone https://github.com/akira-kaneko/laravel-quick-start.git && cd laravel-quick-start`
 
 ### local environment setting
 `cp .env.example .env`
@@ -19,8 +20,10 @@
 `docker-compose up -d`
 
 ### create database and migration
-`docker-compose exec db mysql -e "create database myapp"`
-`docker-compose exec web php artisan migrate`
+```
+docker-compose exec db mysql -e "create database myapp"
+docker-compose exec web php artisan migrate
+```
 
 ### web browser to see.
 http://localhost:8000/
