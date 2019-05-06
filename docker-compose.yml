@@ -2,6 +2,9 @@ version: "3"
 services:
   work:
     image: composer
+    command: install
+    volumes:
+      - .:/app
   db:
     image: mysql:5.7
     environment:
@@ -16,3 +19,4 @@ services:
     working_dir: /myapp
     depends_on:
       - db
+      - work
