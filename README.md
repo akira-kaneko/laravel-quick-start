@@ -12,6 +12,9 @@
 ### local environment setting
 `cp .env.example .env`
 
+### generate api key
+`docker-compose run --rm web php artisan key:generate`
+
 ### boot the app.
 `docker-compose up -d`
 
